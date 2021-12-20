@@ -1,0 +1,124 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*elementos base*/
+body {
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif ;
+    color: white;
+}
+
+
+
+header .container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;  /* colunas já existentes */
+    justify-content: space-between;
+
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'arial black', times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*Assunto Principal*/
+
+.principal {
+    font-size: 16PX;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,0.50)100%), url("/img/fundo.png");   /*adicionando uma camada de pelicula preta acima da imagem*/
+    
+    height: 450px;
+    background-size: cover;
+    background-position: center;; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start; 
+
+}
+
+.principal .descricao{
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.principal .titulo {
+    margin-top: 15%;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.principal .botao {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 15px;
+    font-size: 11px;
+
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.container {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.principal .container {
+    width: 70%;
+}
+
+h4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start; 
+
+    color: var(--vermelho);
+    margin-right: 10px;
+    font-size: 17px;
+    font-family: 'arial black', times;
+    font-size: 18px;
+}
+
+ah4:hover {
+    color: #fff;
+    transition: 0.3s ease all;
+
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
